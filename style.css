@@ -113,12 +113,14 @@ ul {
     list-style: none;
 }
 
+ul {
+    margin-top: 15px;
+    padding-left: 25px;
+}
+
 ul a {
-    display: block;
     color: #2563eb;
     text-decoration: none;
-    padding: 10px 0;
-    font-weight: bold;
 }
 
 ul a:hover {
@@ -127,8 +129,7 @@ ul a:hover {
 }
 
 ul li {
-    padding: 10px 0;
-    color: #333;
+    padding: 5px 0;
 }
 
 .team-container {
