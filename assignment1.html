@@ -1,9 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Assignment 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 – Conceptual Architecture | Group 27</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <header>
+        <h1>Terminal 27</h1>
+        <p>Software Architecture Project - Group 27 - CISC 322/326</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#video">Video</a>
+        <a href="#slides">Slides</a>
+        <a href="#report">Report</a>
+    </nav>
+
+    <main>
+
+        <section class="hero">
+            <h2>Assignment 1: Conceptual Architecture</h2>
+            <p>
+                We recovered WezTerm's conceptual architecture from its official documentation.
+                We describe it as four layers (presentation, session, terminal and system) built
+                around a multiplexer and its domains, combined with a client–server relationship
+                and implicit invocation through Lua event handlers.
+            </p>
+            <p class="meta">Submitted October 9, 2026 · Presented by Francois Olivier and Affan Farooq</p>
+        </section>
+
+
+        <section id="video">
+            <h2>Presentation Video</h2>
+
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/5cvMQLNbfyg"
+                    title="WezTerm Conceptual Architecture – Group 27 presentation"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <p class="doc-actions">
+                <a href="https://www.youtube.com/watch?v=5cvMQLNbfyg" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+            </p>
+        </section>
+
+
+        <section id="slides">
+            <h2>Slides</h2>
+
+            <object class="pdf-frame" data="assets/a1-slides.pdf#view=FitH" type="application/pdf">
+                <p class="pdf-fallback">
+                    Your browser can't show the slides here.
+                    <a href="assets/a1-slides.pdf">Open the slides (PDF)</a>
+                </p>
+            </object>
+
+            <p class="doc-actions">
+                <a href="assets/a1-slides.pdf" target="_blank" rel="noopener noreferrer" class="button">Open full screen</a>
+                <a href="assets/a1-slides.pdf" download class="button button-secondary">Download PDF</a>
+            </p>
+        </section>
+
+
+        <section id="report">
+            <h2>Report</h2>
+
+            <object class="pdf-frame pdf-frame-tall" data="assets/a1-report.pdf" type="application/pdf">
+                <p class="pdf-fallback">
+                    Your browser can't show the report here.
+                    <a href="assets/a1-report.pdf">Open the report (PDF)</a>
+                </p>
+            </object>
+
+            <p class="doc-actions">
+                <a href="assets/a1-report.pdf" target="_blank" rel="noopener noreferrer" class="button">Open full screen</a>
+                <a href="assets/a1-report.pdf" download class="button button-secondary">Download PDF</a>
+            </p>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>2026 Software Architecture Group Project</p>
+    </footer>
 
 </body>
 </html>
