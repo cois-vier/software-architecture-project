@@ -1,9 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Assignment 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 – Concrete Architecture | Group 27</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-</body>
-</html>
+    <header>
+        <h1>Terminal 27</h1>
+        <p>Software Architecture Project - Group 27 - CISC 322/326</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#video">Video</a>
+        <a href="#slides">Slides</a>
+        <a href="#report">Report</a>
+    </nav>
+
+    <main>
+
+        <section class="hero">
+            <h2>Assignment 2: Concrete Architecture</h2>
+            <p>
+                We recovered WezTerm's concrete architecture from its Rust source code at commit
+                <code>4fbd6b8e9</code> and compared it with our conceptual architecture in a reflexion analysis.
+                The multiplexer-centred design holds: 12 of the 16 expected dependencies exist in the code.
+                The code is less strictly layered than our model, because configuration, terminal and PTY types
+                are shared by almost every crate, and the git history shows that the main differences were
+                deliberate design decisions. We also analyse the Multiplexer subsystem in depth.
+            </p>
+            <p class="meta">Submitted November 13, 2026 · Presented by Francois Olivier and Affan Farooq</p>
+        </section>
+
+
+        <section id="video">
+            <h2>Presentation Video</h2>
+
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/SjdOX9ltOuY"
+                    title="WezTerm Concrete Architecture – Group 27 presentation"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <p class="doc-actions">
+                <a href="https://www.youtube.com/watch?v=SjdOX9ltOuY" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+            </p>
+        </section>
